@@ -10,7 +10,9 @@ let interval;
 
 function mili() {
     miliCounter++
-
+    if (miliCounter <= 9) {
+        milisegundos.innerHTML = "0" + miliCounter;
+    }
 
     if (miliCounter == 100) {
 
